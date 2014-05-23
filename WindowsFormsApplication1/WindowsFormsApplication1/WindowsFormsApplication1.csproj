@@ -87,6 +87,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VentanaPedro.resx">
+      <DependentUpon>VentanaPedro.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Northwind_2007DataSet.xsc">
       <DependentUpon>Northwind_2007DataSet.xsd</DependentUpon>
     </None>
