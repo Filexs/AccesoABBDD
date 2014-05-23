@@ -78,6 +78,9 @@
     <EmbeddedResource Include="VentanaAlvaro.resx">
       <DependentUpon>VentanaAlvaro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VentanaFran.resx">
+      <DependentUpon>VentanaFran.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VentanaInicial.resx">
       <DependentUpon>VentanaInicial.cs</DependentUpon>
     </EmbeddedResource>
