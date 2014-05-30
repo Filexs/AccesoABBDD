@@ -38,6 +38,7 @@
             // 
             // conectar
             // 
+            this.conectar.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conectar.Location = new System.Drawing.Point(118, 155);
             this.conectar.Name = "conectar";
             this.conectar.Size = new System.Drawing.Size(115, 23);
@@ -48,6 +49,7 @@
             // 
             // crear
             // 
+            this.crear.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.crear.Location = new System.Drawing.Point(239, 155);
             this.crear.Name = "crear";
             this.crear.Size = new System.Drawing.Size(115, 23);
@@ -59,9 +61,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(115, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Usuario:";
             // 
@@ -82,9 +85,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(115, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.Size = new System.Drawing.Size(73, 14);
             this.label2.TabIndex = 4;
             this.label2.Text = "Contraseña:";
             // 
@@ -92,7 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(463, 190);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.label2);
@@ -101,7 +105,7 @@
             this.Controls.Add(this.crear);
             this.Controls.Add(this.conectar);
             this.Name = "Login";
-            this.Text = "Form1";
+            this.Text = "Inicio de sesion";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -35,6 +35,7 @@
             // 
             // boton_Fran
             // 
+            this.boton_Fran.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton_Fran.Location = new System.Drawing.Point(71, 58);
             this.boton_Fran.Name = "boton_Fran";
             this.boton_Fran.Size = new System.Drawing.Size(164, 133);
@@ -45,6 +46,7 @@
             // 
             // boton_Alvaro
             // 
+            this.boton_Alvaro.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton_Alvaro.Location = new System.Drawing.Point(296, 58);
             this.boton_Alvaro.Name = "boton_Alvaro";
             this.boton_Alvaro.Size = new System.Drawing.Size(164, 133);
@@ -55,6 +57,7 @@
             // 
             // boton_Pedro
             // 
+            this.boton_Pedro.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton_Pedro.Location = new System.Drawing.Point(524, 58);
             this.boton_Pedro.Name = "boton_Pedro";
             this.boton_Pedro.Size = new System.Drawing.Size(164, 133);
@@ -67,13 +70,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(780, 258);
             this.Controls.Add(this.boton_Pedro);
             this.Controls.Add(this.boton_Alvaro);
             this.Controls.Add(this.boton_Fran);
             this.Name = "ventanaParaVistas";
-            this.Text = "programa_prueba";
+            this.Text = "Elige tu Consulta ";
             this.ResumeLayout(false);
 
         }
