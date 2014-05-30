@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class VentanaPedro : Form
+    public partial class ventanaPedro : Form
     {
-        public VentanaPedro()
+        public ventanaPedro()
         {
             InitializeComponent();
         }
@@ -21,15 +21,20 @@ namespace WindowsFormsApplication1
         {
             this.Validate();
             this.proveedoresBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.northwind_2007DataSet);
+            this.tableAdapterManager.UpdateAll(this.databaseDataSet);
 
         }
 
-        private void VentanaPedro_Load(object sender, EventArgs e)
+        private void ventanaPedro_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'northwind_2007DataSet.Proveedores' Puede moverla o quitarla según sea necesario.
-            this.proveedoresTableAdapter.Fill(this.northwind_2007DataSet.Proveedores);
+            // TODO: esta línea de código carga datos en la tabla 'databaseDataSet.Proveedores' Puede moverla o quitarla según sea necesario.
+            this.proveedoresTableAdapter.Fill(this.databaseDataSet.Proveedores);
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

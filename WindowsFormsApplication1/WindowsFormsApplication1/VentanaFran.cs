@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class VentanaFran : Form
+    public partial class ventanaFran : Form
     {
-        public VentanaFran()
+        public ventanaFran()
         {
             InitializeComponent();
         }
@@ -21,14 +21,14 @@ namespace WindowsFormsApplication1
         {
             this.Validate();
             this.clientesBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.northwind_2007DataSet);
+            this.tableAdapterManager.UpdateAll(this.databaseDataSet);
 
         }
 
-        private void VentanaFran_Load(object sender, EventArgs e)
+        private void ventanaFran_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'northwind_2007DataSet.Clientes' Puede moverla o quitarla según sea necesario.
-            this.clientesTableAdapter.Fill(this.northwind_2007DataSet.Clientes);
+            // TODO: esta línea de código carga datos en la tabla 'databaseDataSet.Clientes' Puede moverla o quitarla según sea necesario.
+            this.clientesTableAdapter.Fill(this.databaseDataSet.Clientes);
 
         }
     }

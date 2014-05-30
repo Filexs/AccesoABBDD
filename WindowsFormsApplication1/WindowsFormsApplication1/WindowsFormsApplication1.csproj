@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5E2EBD70-D15A-491B-A973-257D32B1D792}</ProjectGuid>
+    <ProjectGuid>{D133C186-0B40-45DC-BF4C-0E56234808C6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WindowsFormsApplication1</RootNamespace>
@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,45 +45,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Northwind_2007DataSet.Designer.cs">
+    <Compile Include="databaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Northwind_2007DataSet.xsd</DependentUpon>
+      <DependentUpon>databaseDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="VentanaAlvaro.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VentanaAlvaro.Designer.cs">
-      <DependentUpon>VentanaAlvaro.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="VentanaFran.cs">
+    <Compile Include="nuevo_usuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VentanaFran.Designer.cs">
-      <DependentUpon>VentanaFran.cs</DependentUpon>
-    </Compile>
-    <Compile Include="VentanaInicial.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VentanaInicial.Designer.cs">
-      <DependentUpon>VentanaInicial.cs</DependentUpon>
+    <Compile Include="nuevo_usuario.Designer.cs">
+      <DependentUpon>nuevo_usuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VentanaPedro.cs">
+    <Compile Include="ventanaAlvaro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VentanaPedro.Designer.cs">
-      <DependentUpon>VentanaPedro.cs</DependentUpon>
+    <Compile Include="ventanaAlvaro.Designer.cs">
+      <DependentUpon>ventanaAlvaro.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="VentanaAlvaro.resx">
-      <DependentUpon>VentanaAlvaro.cs</DependentUpon>
+    <Compile Include="ventanaFran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanaFran.Designer.cs">
+      <DependentUpon>ventanaFran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventanaParaVistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanaParaVistas.Designer.cs">
+      <DependentUpon>ventanaParaVistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ventanaPedro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanaPedro.Designer.cs">
+      <DependentUpon>ventanaPedro.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VentanaFran.resx">
-      <DependentUpon>VentanaFran.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VentanaInicial.resx">
-      <DependentUpon>VentanaInicial.cs</DependentUpon>
+    <EmbeddedResource Include="nuevo_usuario.resx">
+      <DependentUpon>nuevo_usuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -93,19 +103,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="VentanaPedro.resx">
-      <DependentUpon>VentanaPedro.cs</DependentUpon>
+    <EmbeddedResource Include="ventanaAlvaro.resx">
+      <DependentUpon>ventanaAlvaro.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Northwind_2007DataSet.xsc">
-      <DependentUpon>Northwind_2007DataSet.xsd</DependentUpon>
+    <EmbeddedResource Include="ventanaFran.resx">
+      <DependentUpon>ventanaFran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanaParaVistas.resx">
+      <DependentUpon>ventanaParaVistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanaPedro.resx">
+      <DependentUpon>ventanaPedro.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="databaseDataSet.xsc">
+      <DependentUpon>databaseDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Northwind_2007DataSet.xsd">
+    <None Include="databaseDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Northwind_2007DataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>databaseDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Northwind_2007DataSet.xss">
-      <DependentUpon>Northwind_2007DataSet.xsd</DependentUpon>
+    <None Include="databaseDataSet.xss">
+      <DependentUpon>databaseDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -118,10 +137,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Northwind 2007.accdb">
+    <Content Include="database.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
