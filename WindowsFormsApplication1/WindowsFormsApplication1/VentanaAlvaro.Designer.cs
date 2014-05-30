@@ -186,6 +186,7 @@
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
+            this.bindingNavigatorMoveNextItem.Click += new System.EventHandler(this.bindingNavigatorMoveNextItem_Click);
             // 
             // bindingNavigatorMoveLastItem
             // 
@@ -213,6 +214,7 @@
             // empleadosDataGridView
             // 
             this.empleadosDataGridView.AutoGenerateColumns = false;
+            this.empleadosDataGridView.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.empleadosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.empleadosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -289,7 +291,7 @@
             this.Controls.Add(this.empleadosDataGridView);
             this.Controls.Add(this.empleadosBindingNavigator);
             this.Name = "ventanaAlvaro";
-            this.Text = "ventanaAlvaro";
+            this.Text = "Proveedores";
             this.Load += new System.EventHandler(this.ventanaAlvaro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadosBindingSource)).EndInit();

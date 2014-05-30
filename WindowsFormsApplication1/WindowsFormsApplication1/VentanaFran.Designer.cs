@@ -53,7 +53,6 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingNavigator)).BeginInit();
@@ -110,7 +109,7 @@
             this.clientesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.clientesBindingNavigator.Name = "clientesBindingNavigator";
             this.clientesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.clientesBindingNavigator.Size = new System.Drawing.Size(721, 25);
+            this.clientesBindingNavigator.Size = new System.Drawing.Size(545, 25);
             this.clientesBindingNavigator.TabIndex = 0;
             this.clientesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -211,6 +210,7 @@
             // clientesDataGridView
             // 
             this.clientesDataGridView.AutoGenerateColumns = false;
+            this.clientesDataGridView.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.clientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.clientesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -220,9 +220,10 @@
             this.dataGridViewTextBoxColumn5});
             this.clientesDataGridView.DataSource = this.clientesBindingSource;
             this.clientesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clientesDataGridView.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.clientesDataGridView.Location = new System.Drawing.Point(0, 25);
             this.clientesDataGridView.Name = "clientesDataGridView";
-            this.clientesDataGridView.Size = new System.Drawing.Size(721, 304);
+            this.clientesDataGridView.Size = new System.Drawing.Size(545, 308);
             this.clientesDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -255,25 +256,15 @@
             this.dataGridViewTextBoxColumn5.HeaderText = "empresa";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(543, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 305);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Cerrar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // ventanaFran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(721, 329);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(545, 333);
             this.Controls.Add(this.clientesDataGridView);
             this.Controls.Add(this.clientesBindingNavigator);
             this.Name = "ventanaFran";
-            this.Text = "ventanaFran";
+            this.Text = "Clientes";
             this.Load += new System.EventHandler(this.ventanaFran_Load);
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
@@ -311,6 +302,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.Button button1;
     }
 }

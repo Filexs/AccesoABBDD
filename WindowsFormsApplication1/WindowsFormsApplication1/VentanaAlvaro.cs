@@ -31,5 +31,10 @@ namespace WindowsFormsApplication1
             this.empleadosTableAdapter.Fill(this.databaseDataSet.Empleados);
 
         }
+
+        private void bindingNavigatorMoveNextItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

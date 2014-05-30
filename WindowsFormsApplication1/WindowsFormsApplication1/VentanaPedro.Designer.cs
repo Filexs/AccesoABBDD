@@ -54,7 +54,6 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proveedoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proveedoresBindingNavigator)).BeginInit();
@@ -111,7 +110,7 @@
             this.proveedoresBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.proveedoresBindingNavigator.Name = "proveedoresBindingNavigator";
             this.proveedoresBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.proveedoresBindingNavigator.Size = new System.Drawing.Size(819, 25);
+            this.proveedoresBindingNavigator.Size = new System.Drawing.Size(645, 25);
             this.proveedoresBindingNavigator.TabIndex = 0;
             this.proveedoresBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -212,6 +211,7 @@
             // proveedoresDataGridView
             // 
             this.proveedoresDataGridView.AutoGenerateColumns = false;
+            this.proveedoresDataGridView.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.proveedoresDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.proveedoresDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -224,7 +224,7 @@
             this.proveedoresDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.proveedoresDataGridView.Location = new System.Drawing.Point(0, 25);
             this.proveedoresDataGridView.Name = "proveedoresDataGridView";
-            this.proveedoresDataGridView.Size = new System.Drawing.Size(819, 305);
+            this.proveedoresDataGridView.Size = new System.Drawing.Size(645, 316);
             this.proveedoresDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -263,26 +263,15 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Telefono";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(643, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 305);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Cerrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // ventanaPedro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(819, 330);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(645, 341);
             this.Controls.Add(this.proveedoresDataGridView);
             this.Controls.Add(this.proveedoresBindingNavigator);
             this.Name = "ventanaPedro";
-            this.Text = "ventanaPedro";
+            this.Text = "Empleados";
             this.Load += new System.EventHandler(this.ventanaPedro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proveedoresBindingSource)).EndInit();
@@ -321,6 +310,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.Button button1;
     }
 }
